@@ -1,0 +1,12 @@
+{
+  "name": "portfolio-cloud",
+  "version": "1.0.0",
+  "description": "Cloud Computing Portfolio Website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
