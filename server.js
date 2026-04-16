@@ -6,7 +6,9 @@ const app = express();
 // Use port 80 for production cloud deployment, but 3000 locally
 const PORT = process.env.PORT || 3000;
 
+// Serve from 'public' folder (local IDE) OR root folder (flat GitHub upload)
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(__dirname));
 
 app.get('/api/instance-info', (req, res) => {
     // Get basic instance info to display which server handled the request
